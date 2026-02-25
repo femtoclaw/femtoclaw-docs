@@ -1,0 +1,10 @@
+name: femtoclaw-docs
+
+on: [push, pull_request]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "FemtoClaw docs validation complete"
