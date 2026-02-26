@@ -13,7 +13,7 @@ This repository is the canonical location for:
 - Benchmark methodology and reporting
 - API and integration references
 
-**Version:** 1.0.0  
+**Version:** 1.0.1  
 **Date:** 2026-02-25  
 **License:** Apache-2.0
 
