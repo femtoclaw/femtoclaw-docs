@@ -13,9 +13,54 @@ This repository is the canonical location for:
 - Benchmark methodology and reporting
 - API and integration references
 
-**Version:** 1.0.1  
-**Date:** 2026-02-25  
+**Version:** 1.0.3  
+**Date:** 2026-02-26  
 **License:** Apache-2.0
+
+---
+
+## 🚀 Quick Start
+
+```bash
+# Install
+cargo install femtoclaw
+
+# Run with Ollama (local)
+export FEMTO_BRAIN=ollama
+femtoclaw "What is 2+2?"
+
+# Run with OpenAI
+export FEMTO_BRAIN=openai
+export FEMTO_OPENAI_API_KEY=sk-...
+femtoclaw "your prompt"
+
+# Run with LM Studio (local)
+export FEMTO_BRAIN=lmstudio
+femtoclaw "your prompt"
+```
+
+---
+
+## 🤖 Supported LLM Providers (14)
+
+FemtoClaw supports 14 LLM providers for maximum flexibility:
+
+| Provider | Brain Name | Environment Variables |
+|----------|------------|----------------------|
+| Local Ollama | `ollama` | FEMTO_OLLAMA_MODEL (default: llama3.2) |
+| LM Studio | `lmstudio` | FEMTO_LMSTUDIO_MODEL |
+| OpenAI | `openai` | FEMTO_OPENAI_API_KEY, FEMTO_OPENAI_MODEL |
+| OpenRouter | `openrouter` | FEMTO_OPENROUTER_API_KEY (100+ models) |
+| Anthropic Claude | `anthropic` | FEMTO_ANTHROPIC_API_KEY |
+| xAI Grok | `grok` | FEMTO_GROK_API_KEY |
+| Google Gemini | `gemini` | FEMTO_GEMINI_API_KEY |
+| Amazon Bedrock | `bedrock` | FEMTO_BEDROCK_REGION, FEMTO_BEDROCK_ACCESS_KEY |
+| Azure OpenAI | `azure` | FEMTO_AZURE_ENDPOINT, FEMTO_AZURE_API_KEY |
+| Mistral AI | `mistral` | FEMTO_MISTRAL_API_KEY |
+| DeepSeek | `deepseek` | FEMTO_DEEPSEEK_API_KEY |
+| Perplexity | `perplexity` | FEMTO_PERPLEXITY_API_KEY |
+| OpenCode Zen | `zen` | FEMTO_ZEN_API_KEY |
+| Echo (testing) | `echo` | (none) |
 
 ---
 
