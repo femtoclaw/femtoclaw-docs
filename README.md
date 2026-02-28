@@ -91,6 +91,7 @@ FemtoClaw supports 14 LLM providers for maximum flexibility:
 ### Benchmarking
 - [`benchmarking/benchmark-methodology.md`](benchmarking/benchmark-methodology.md) — measurement discipline, reproducibility rules
 - [`benchmarking/benchmark-results.md`](benchmarking/benchmark-results.md) — reporting format and example tables
+- [`benchmarking/runtime-performance.md`](benchmarking/runtime-performance.md) - FemtoClaw runtime performance baseline and measured metrics
 
 ### Reference
 - [`reference/runtime-api.md`](reference/runtime-api.md) — runtime integration surface and configuration model
