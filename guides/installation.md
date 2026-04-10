@@ -1,12 +1,24 @@
 # Installation Guide
 
-**Version:** 1.0.0  
-**Date:** 2026-02-25  
+**Version:** 1.0.3
+**Date:** 2026-04-09
 **License:** Apache-2.0
 
 ---
 
-## 1. Prerequisites
+## 1. Quick Install (macOS/Linux)
+
+For a fast, one-liner installation on macOS or Linux:
+
+```bash
+curl -fsSL https://femtoclaw.org/install.sh | sh
+```
+
+This will download the latest pre-compiled binary and install it to `/usr/local/bin`.
+
+---
+
+## 2. Prerequisites
 
 - Rust toolchain (stable) if installing via Cargo
 - Supported OS: macOS, Linux, Windows
