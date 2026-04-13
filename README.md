@@ -14,7 +14,7 @@ This repository is the canonical location for:
 - API and integration references
 
 **Version:** 1.0.3  
-**Date:** 2026-02-26  
+**Date:** 2026-04-11  
 **License:** Apache-2.0
 
 ---
@@ -27,23 +27,17 @@ cargo install femtoclaw
 
 # Run with Ollama (local)
 export FEMTO_BRAIN=ollama
-femtoclaw "What is 2+2?"
+femtoclaw run
 
-# Run with OpenAI
-export FEMTO_BRAIN=openai
-export FEMTO_OPENAI_API_KEY=sk-...
-femtoclaw "your prompt"
-
-# Run with LM Studio (local)
-export FEMTO_BRAIN=lmstudio
-femtoclaw "your prompt"
+# Send a single prompt
+femtoclaw once --prompt "What is 2+2?"
 ```
 
 ---
 
-## 🤖 Supported LLM Providers (14)
+## 🤖 Supported LLM Providers (15)
 
-FemtoClaw supports 14 LLM providers for maximum flexibility:
+FemtoClaw supports 15 LLM providers for maximum flexibility:
 
 | Provider | Brain Name | Environment Variables |
 |----------|------------|----------------------|
@@ -61,6 +55,7 @@ FemtoClaw supports 14 LLM providers for maximum flexibility:
 | Perplexity | `perplexity` | FEMTO_PERPLEXITY_API_KEY |
 | OpenCode Zen | `zen` | FEMTO_ZEN_API_KEY |
 | Echo (testing) | `echo` | (none) |
+| Mock (testing) | `mock` | (none) |
 
 ---
 
